@@ -1,0 +1,29 @@
+﻿<Window x:Class="HQF.WPF.Controls.CirclePanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HQF.WPF.Controls.CirclePanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ListBox Background="BlueViolet">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <!--<local:CircularPanel />-->
+                    <local:CircularPanel2/>
+                    <!--<local:RadialPanel />-->
+                    <!--<local:RadialPanel2 />-->
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.Items>
+                <ListBoxItem>Item1</ListBoxItem>
+                <ListBoxItem>Item2</ListBoxItem>
+                <ListBoxItem>Item3</ListBoxItem>
+                <ListBoxItem>Item4</ListBoxItem>
+                <ListBoxItem>Item5</ListBoxItem>
+                <ListBoxItem>Item6</ListBoxItem>
+            </ListBox.Items>
+        </ListBox>
+    </Grid>
+</Window>
